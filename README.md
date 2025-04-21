@@ -47,11 +47,11 @@ A comprehensive **offline travel guide app** that provides cultural insights, do
 
 Developed as a collaborative project by:
 - **Fai Alharthi** – [GitHub](https://github.com/FaiAlharthi)
-- **Aljoharah Bin Taleb** – [GitHub]()
+- **Aljoharah Bin Taleb** – [GitHub](https://github.com/Aljoharah25)
 - **Joud Alamri** – [GitHub](https://github.com/joudy003)
 - **Albatoul Alhamas** – [GitHub](https://github.com/batoul252)
 - **Manar Alghamdi** – [GitHub](https://github.com/ManarAliAlghamdi)
 
 
-Made with ❤️ by the **Swift Squad**
+Made by the **Swift Squad**
 
