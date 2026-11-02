@@ -6,6 +6,8 @@
 
 An iOS app that helps Saudi travelers avoid cultural misunderstandings abroad. Pick a destination and get simple, Arabic-first guidance on local customs, what to do, and what to avoid. Everything works offline.
 
+Built as a team challenge at the **Apple Developer Academy**.
+
 ![Swift](https://img.shields.io/badge/Swift-F05138?logo=swift&logoColor=white)
 ![SwiftUI](https://img.shields.io/badge/SwiftUI-0D96F6?logo=swift&logoColor=white)
 ![iOS](https://img.shields.io/badge/iOS-17+-000000?logo=apple&logoColor=white)
