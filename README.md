@@ -1,57 +1,61 @@
-# Aktashef
-An app that helps Saudi travelers who want to have comfortable travel trips without facing any Conflicts, by presenting information and traditions about the country’s local culture through a simplified and easily understandable guidance.
+<p align="center">
+  <img src="logo.gif" alt="Aktashef" width="140">
+</p>
 
-# 🌍 Aktashef Althaqafat - اكتشف الثقافات
+# Aktashef | اكتشف الثقافات
 
-**Aktashef Althaqafat** is a mobile application developed for Saudi travelers who want to deepen their understanding of local cultures around the world. The app provides offline access to essential cultural guidelines to help users avoid conflicts and better respect customs while traveling.
+An iOS app that helps Saudi travelers avoid cultural misunderstandings abroad. Pick a destination and get simple, Arabic-first guidance on local customs, what to do, and what to avoid. Everything works offline.
 
----
+![Swift](https://img.shields.io/badge/Swift-F05138?logo=swift&logoColor=white)
+![SwiftUI](https://img.shields.io/badge/SwiftUI-0D96F6?logo=swift&logoColor=white)
+![iOS](https://img.shields.io/badge/iOS-17+-000000?logo=apple&logoColor=white)
 
-## 🧠 Problem / Opportunity
+## What it does
 
-**Saudi travelers** often wish to avoid unintentional cultural missteps when visiting other countries. Without accessible cultural context, misunderstandings can happen.
+- Browse countries as a list or a grid, and search by name.
+- Open a country to read its customs, do's and don'ts, grouped by category.
+- Save favorite countries for quick access. Favorites are stored on the device.
+- Works with no internet: all content ships inside the app as JSON.
+- Arabic interface with right-to-left layout, an animated splash screen, and light and dark mode.
 
----
+## Tech stack
 
-## ✅ Solution
+Swift, SwiftUI, SwiftData, JSON for content, `FileManager` for saving favorites.
 
-A comprehensive **offline travel guide app** that provides cultural insights, do’s and don’ts, and social norms about each country in a **simple, friendly, and Arabic-first interface**.
+## Run it
 
----
+You need Xcode 16+ on a Mac.
 
-## 📱 Features
+```bash
+git clone https://github.com/FaiAlharthi/Aktashef.git
+cd Aktashef
+open CultreApp.xcodeproj
+```
 
-- 🌍 Browse a list of countries (UK, Japan, Russia, Singapore...)
-- 📌 Save favorite countries for quick access
-- 📷 View cultural information with visuals and localized Arabic text
-- 🚫 Learn what to do and what to avoid in each culture
-- 📴 Fully functional **offline** – no internet required
+Pick an iPhone simulator and press Run.
 
----
+## How it works
 
-## 🛠 Technologies Used
+- `countries.json`, `catagory.json`, and `catagoryContent.json` hold the countries, the categories, and the cultural content.
+- On first launch the countries file is copied from the app bundle into the Documents folder, so favorites can be saved and survive restarts (`DataLoader.swift`).
+- `CountryListView`, `CountryGridView`, and `CountryDetailView` are the three main screens.
 
-- **SwiftUI** – for building the entire user interface
-- **Arabic language** – full localization
-- **Custom illustrations and layout** – for a friendly and educational UX
+## What I would improve next
 
----
+- Use SwiftData directly for favorites instead of rewriting a JSON file.
+- Rename `Counrtry`/`catagory` identifiers to the correct spelling.
+- Add more countries and an English interface.
 
-## 📸 App Screens
+## Team
 
-![App Preview](./Aktashef.PNG)
+Built by **Swift Squad**.
 
----
-
-## 👩🏻‍💻 Team Members
-
-Developed as a collaborative project by:
-- **Fai Alharthi** – [GitHub](https://github.com/FaiAlharthi)
-- **Aljoharah Bin Taleb** – [GitHub](https://github.com/Aljoharah25)
-- **Joud Alamri** – [GitHub](https://github.com/joudy003)
-- **Albatoul Alhamas** – [GitHub](https://github.com/batoul252)
-- **Manar Alghamdi** – [GitHub](https://github.com/ManarAliAlghamdi)
-
-
-Made by the **Swift Squad**
-
+<table>
+  <tr>
+    <td align="center"><a href="https://github.com/FaiAlharthi"><b>Fai Alharthi</b></a></td>
+    <td align="center"><a href="https://github.com/Aljoharah25"><b>Aljoharah Bin Taleb</b></a></td>
+    <td align="center"><a href="https://github.com/joudy003"><b>Joud Alamri</b></a></td>
+    <td align="center"><a href="https://github.com/batoul252"><b>Albatoul Alhamas</b></a></td>
+    <td align="center"><a href="https://github.com/ManarAliAlghamdi"><b>Manar Alghamdi</b></a></td>
+  </tr>
+</table>
